@@ -5,17 +5,19 @@ import Wrapper from '../core/view/wrapper';
 import RootRoute from '../route';
 import HomeRoute from '../views/home/route';
 
-const reducer = (acc, item) => {
-  acc[item[0]] = {
-    render() {
-      return m(Wrapper, m(item[1]));
-    }
+const reduceRoutes = (routes) => {
+  const reducer = (obj, item) => {
+    obj[item[0]] = {
+      render() {
+        return m(Wrapper, m(item[1]));
+      }
+    };
+  
+    return obj;
   };
 
-  return acc;
+  return routes.reduce(reducer, {});
 };
-
-const reduceRoutes = (routes) => routes.reduce(reducer, {});
 
 export default reduceRoutes([
   RootRoute,
