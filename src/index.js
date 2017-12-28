@@ -1,5 +1,7 @@
 import m from 'mithril';
 
-const root = document.body;
+import routes from './app/core/routes';
 
-m.render(root, 'Hello World!');
+import './index.css';
+
+m.route(document.body, '/', routes);

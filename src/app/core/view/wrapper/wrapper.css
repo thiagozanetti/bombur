@@ -1,0 +1,22 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: 100px auto 50px;
+  grid-template-areas: 
+    "header header header" 
+    "container container container"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.container {
+  grid-area: container;
+}
+
+.footer {
+  grid-area: footer;
+}
+      
