@@ -9,8 +9,7 @@ import './wrapper.css';
 export default {
   view(vnode) {
     
-  return m('main', 
-    { class: 'wrapper' }, 
+  return m('.wrapper', 
     [
       Header,
       m(Container, vnode.children),
