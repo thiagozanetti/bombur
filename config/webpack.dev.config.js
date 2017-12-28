@@ -30,7 +30,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Bombur: lightweight to-do list'
     }),
-    new UglifyJSPlugin(),
+    // new UglifyJSPlugin(),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
   ],
