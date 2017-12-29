@@ -1,7 +1,11 @@
 import m from 'mithril';
 
+import Dashboard from './modules/dashboard';
+
+import './app.css';
+
 export default {
   view() {
-    return m('h1', 'Hello World!')
+    return m('.content-area', m(Dashboard));
   }
 };

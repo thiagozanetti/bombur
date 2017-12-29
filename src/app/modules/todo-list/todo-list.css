@@ -1,0 +1,49 @@
+ul {
+  padding: 1.5rem 1.5rem 3rem 1.5rem;
+  font-family: 'Neucha', cursive;
+  list-style: none;
+}
+
+.todo-bg__first-layer {
+  margin: 1rem;
+  background-color: violet;
+  transform: rotate(-4deg);
+}
+
+.todo-bg__second-layer {
+  background-color: aqua;
+  transform: rotate(2deg);
+}
+
+.todo-list__container {
+  font-size: 12pt;
+  background-color: rgb(255, 255, 164);
+  border: solid 1px rgb(218, 218, 173);
+  transform: rotate(2deg);
+  overflow: hidden;
+}
+
+.todo-list__container,
+.todo-bg__second-layer,
+.todo-bg__first-layer {
+  width: 30rem;
+  border-radius: 2px;
+}
+
+.list-title,
+.list-title__bg {
+  background-color: blueviolet;
+  text-align: right;
+  transform: skewY(-2deg);
+  transform-origin: top left;
+}
+
+.list-title {
+  padding: .3rem;
+  overflow: hidden;
+  font-family: 'Concert One', cursive;
+}
+
+.list-title__bg {
+  transform: skewY(2deg);
+}

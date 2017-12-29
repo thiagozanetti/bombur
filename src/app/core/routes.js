@@ -3,7 +3,7 @@ import m from 'mithril';
 import Wrapper from '../core/view/wrapper';
 
 import RootRoute from '../route';
-import HomeRoute from '../views/home/route';
+import HomeRoute from '../modules/home/route';
 
 const reduceRoutes = (routes) => {
   const reducer = (obj, item) => {

@@ -1,0 +1,10 @@
+li {
+  padding: .3rem 0 .2rem 0;
+  border-bottom: solid rgba(0, 0, 128, .5) 1px;
+}
+
+.checked {
+  text-decoration: line-through;
+  font-style: italic;
+  color: rgba(0, 0, 0, .75);
+}
