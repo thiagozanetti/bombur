@@ -1,16 +1,16 @@
-ul {
+ul.todo-list__list {
   padding: 1.5rem 1.5rem 3rem 1.5rem;
   font-family: 'Neucha', cursive;
   list-style: none;
 }
 
-.todo-bg__first-layer {
+.todo-list__first-layer {
   margin: 1rem;
   background-color: violet;
   transform: rotate(-4deg);
 }
 
-.todo-bg__second-layer {
+.todo-list__second-layer {
   background-color: aqua;
   transform: rotate(2deg);
 }
@@ -24,26 +24,30 @@ ul {
 }
 
 .todo-list__container,
-.todo-bg__second-layer,
-.todo-bg__first-layer {
+.todo-list__second-layer,
+.todo-list__first-layer {
   width: 30rem;
   border-radius: 2px;
 }
 
-.list-title,
-.list-title__bg {
+.todo-list__title,
+.todo-list__title-bg {
   background-color: blueviolet;
   text-align: right;
   transform: skewY(-2deg);
   transform-origin: top left;
 }
 
-.list-title {
+.todo-list__title {
   padding: .3rem;
   overflow: hidden;
   font-family: 'Concert One', cursive;
 }
 
-.list-title__bg {
+.todo-list__title-bg {
   transform: skewY(2deg);
+}
+
+.todo-list:not(:first-of-type):not(:last-of-type) {
+  margin: 2.5rem 0;
 }

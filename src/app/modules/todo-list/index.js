@@ -8,13 +8,16 @@ export default {
   view(vnode) {
     const todo = vnode.attrs.todo;
 
-    return m('.todo-bg__first-layer',
-      m('.todo-bg__second-layer',
+    return m('.todo-list', 
+    m('.todo-list__first-layer',
+      m('.todo-list__second-layer',
         m('.todo-list__container', [
-          m('.list-title__bg', m('.list-title', todo.title)),
-          m('ul.todo-list', todo.items.map((item) => m(ListItem, { item }))),
+          m('.todo-list__title-bg', m('.todo-list__title', todo.title)),
+          m('ul.todo-list__list', todo.items.map((item) => m(ListItem, {
+            item
+          }))),
         ])
       )
-    );
+    ));
   }
 };
