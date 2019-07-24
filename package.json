@@ -11,7 +11,7 @@
   "author": "Thiago Zanetti <thiago.project@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "mithril": "^1.1.6"
+    "mithril": "^2.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
