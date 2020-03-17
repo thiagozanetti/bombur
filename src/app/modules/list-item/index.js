@@ -11,7 +11,7 @@ export default {
       key: item.id
     }, [
       m('input[type=checkbox]', {
-        onclick: m.withAttr('checked', () => item.done = !item.done),
+        onclick: () => item.done = !item.done,
         checked: item.done
       }),
       item.title,

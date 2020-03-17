@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
 const paths = require('.');
@@ -26,11 +25,10 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin([paths.distPath()]),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Bombur: lightweight to-do list'
     }),
-    // new UglifyJSPlugin(),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
   ],
